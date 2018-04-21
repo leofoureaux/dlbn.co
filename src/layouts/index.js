@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children }) => {
                 <nav style={{flex: 1}}>
                   <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
                     <li><Link to={`/${locale}/projects`}>{messages[locale || defaultLocale].nav.projects}</Link></li>
-                    <li><Link to={`/${locale}/about`}>{messages[locale || defaultLocale].nav.about}</Link></li>
+                    <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li>
                   </ul>
                 </nav>
               </div>
@@ -59,8 +59,9 @@ const TemplateWrapper = ({ children }) => {
               {children()}
             </main>
           </div>
-          <footer className="pt-5 pb-3">
+          <footer className="py-3">
             <div className="container">
+              <div className="separator"></div>
               <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
                 <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="18"/></a></li>
                 <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="18"/></a></li>
