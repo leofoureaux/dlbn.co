@@ -9,23 +9,17 @@ const messages = {
     ],
     button: 'Vamos conversar!'
   },
-  services: [
-    {
-      emoji: '📱',
-      title: 'Layouts responsivos',
-      description: (<p>Funcionam perfeitamente em <strong>qualquer tela</strong></p>)
-    },
-    {
-      emoji: '🚀',
-      title: 'Alta performance',
-      description: (<p>Nota 90+ garantida no PageSpeed para <strong>maior performance e melhor rankeamento no Google</strong></p>)
-    },
-    {
-      emoji: '🔌',
-      title: 'Integrações',
-      description: (<p><strong>Qualquer integração</strong> via API que você queira</p>)
-    }
-  ]
+  about: {
+    title: 'Sobre',
+    description: (
+      <div>
+        <p className="lead">Desenvolvedor front-end. Co-fundador do <a href="http://tripby.org">tripby.org</a></p>
+        <p>Eu amo tecnologia e como ela conduz a evolução humana. É animador fazer parte disto.</p>
+        <p>Atualmente estou vivendo como nômade, mochilando pela América do Sul.</p>
+      </div>
+    ),
+    tech: 'Tecnologias que gosto de usar'
+  }
 }
 
 export default (props) => <IndexPage messages={messages} locale='pt'/>

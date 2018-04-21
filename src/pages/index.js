@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Typist from 'react-typist';
 import { withPrefix } from 'gatsby-link';
+import About from './about'
+
 import SimpleIcon from '../components/SimpleIcon'
 
 import 'react-typist/dist/Typist.css'
@@ -54,17 +56,7 @@ class IndexPage extends React.Component {
               >{messages.tagline.button}</Link>
           </section>
           <div className="separator"></div>
-          <section>
-            <div className="row" style={{lineHeight: 2}}>
-              {messages.services.map((service, index) => (
-                <div className="col-12 col-md-4" key={index}>
-                  <h3>{service.emoji}</h3>
-                  <h3>{service.title}</h3>
-                  {service.description}
-                </div>
-              ))}
-            </div>
-          </section>
+          <About messages={messages.about} />
         </div>
       )
     }
