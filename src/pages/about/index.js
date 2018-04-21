@@ -10,12 +10,11 @@ const About = (props) => {
         <Helmet>
           <title>{messages.title}</title>
         </Helmet>
-        <h1>{messages.title}</h1>
-        <div className="separator"></div>
+        <h2>{messages.title}</h2>
         <section className="mb-3">
           {messages.description}
         </section>
-        <h2>{messages.tech}</h2>
+        <h3>{messages.tech}</h3>
         <Badges skills={[
           {
             icon: 'react',
