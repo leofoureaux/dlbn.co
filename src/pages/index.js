@@ -82,12 +82,6 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'webpack',
-                name: 'webpack',
-                url: 'https://webpack.js.org/',
-                color: '#61DAFB'
-              },
-              {
                 icon: 'sass',
                 name: 'Sass',
                 url: 'https://sass-lang.com/',
@@ -97,12 +91,6 @@ class IndexPage extends React.Component {
                 icon: 'gatsby',
                 name: 'Gatsby',
                 url: 'https://gatsbyjs.org/',
-                color: '#61DAFB'
-              },
-              {
-                icon: 'docker',
-                name: 'Docker',
-                url: 'https://docker.com/',
                 color: '#61DAFB'
               },
               {
