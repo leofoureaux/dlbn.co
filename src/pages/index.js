@@ -102,7 +102,7 @@ class IndexPage extends React.Component {
               {
                 icon: 'docker',
                 name: 'Docker',
-                url: 'https://gatsbyjs.org/',
+                url: 'https://docker.com/',
                 color: '#61DAFB'
               },
               {
