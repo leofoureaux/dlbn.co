@@ -76,6 +76,12 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
+                icon: 'graphql',
+                name: 'GraphQL',
+                url: 'https://graphql.org/',
+                color: '#61DAFB'
+              },
+              {
                 icon: 'nodejs',
                 name: 'Node.js',
                 url: 'https://nodejs.org/',
@@ -97,12 +103,6 @@ class IndexPage extends React.Component {
                 icon: 'git',
                 name: 'Git',
                 url: 'https://git-scm.com/',
-                color: '#61DAFB'
-              },
-              {
-                icon: 'graphql',
-                name: 'GraphQL',
-                url: 'https://graphql.org/',
                 color: '#61DAFB'
               },
             ]} />
