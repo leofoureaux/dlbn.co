@@ -12,7 +12,7 @@ const projects = [
     description: (
       <div>
         <p>Panthera é um serviço de desenvolvimento de websites focado em simplicidade e agilidade. O processo leva no máximo 3 dias, desde a contratação até a entrega.</p>
-        <p>O cliente só precisa gastar 30 minutos em uma chamada de voz para que possamos entender como desenvolver o site e seu conteúdo. É ideal para profissionais autônomos e pequenas empresas.</p>
+        <p>Ideal para profissionais autônomos e pequenas empresas.</p>
       </div>
     )
   },
@@ -22,7 +22,7 @@ const projects = [
     description: (
       <div>
         <p>TRIPBY é um projeto de redução de danos que foca em fornecer informações sobre drogas psicoativas.</p>
-        <p>A versão atual foi desenvolvida há vários anos atrás no WordPress. Agora estou trabalhando para lançar uma nova versão como um webapp progressivo em <a href="https://reactjs.org/">React</a> + <a href="https://www.apollographql.com/">Apollo</a> e usando o <a href="https://www.graph.cool/">Graphcool</a> como backend.</p>
+        <p>A versão atual é um wesite estático desenvolvido com o <a href="https://gatsbyjs.org">Gatsby</a>. Agora estou trabalhando para lançar uma nova versão como um webapp progressivo em <a href="https://reactjs.org/">React</a> + <a href="https://www.apollographql.com/">Apollo</a> e usando o <a href="https://www.graph.cool/">Graphcool</a> como backend.</p>
       </div>
     )
   },

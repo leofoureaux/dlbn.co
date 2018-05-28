@@ -12,7 +12,7 @@ const projects = [
     description: (
       <div>
         <p>Panthera is a website development service focused on simplicity and speed. The whole process takes 3 days or less, from hiring to delivery.</p>
-        <p>The client has to spend just 30 minutes in a phone call so we can understand how to build the website and it's content. It's best suited to freelancers and small companies.</p>
+        <p>Best suited to freelancers and small companies.</p>
       </div>
     )
   },
@@ -22,7 +22,7 @@ const projects = [
     description: (
       <div>
         <p>TRIPBY is a drug harm reduction project which focuses on providing information about psychoactive drugs.</p>
-        <p>The live version was developed several years ago on WordPress. Now we are working to launch a new version as a <a href="https://reactjs.org/">React</a> + <a href="https://www.apollographql.com/">Apollo</a> progressive web app which uses <a href="https://www.graph.cool/">Graphcool</a> as the backend.</p>
+        <p>The live version is static and built on <a href="https://gatsbyjs.org">Gatsby</a>. I am now working to launch a new version as a <a href="https://reactjs.org/">React</a> + <a href="https://www.apollographql.com/">Apollo</a> progressive web app which uses <a href="https://www.graph.cool/">Graphcool</a> as the backend.</p>
       </div>
     )
   },
