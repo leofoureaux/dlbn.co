@@ -11,7 +11,7 @@ const projects = [
     url: 'https://panthera.dlbn.co',
     description: (
       <div>
-        <p>Panthera é um serviço de desenvolvimento de websites focado em simplicidade e agilidade. O processo leva no máximo 3 dias, desde a contratação até a entrega.</p>
+        <p>Panthera é um serviço de desenvolvimento de websites simples e eficientes.</p>
         <p>Ideal para profissionais autônomos e pequenas empresas.</p>
       </div>
     )
