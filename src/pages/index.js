@@ -76,15 +76,15 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'nodejs',
-                name: 'Node.js',
-                url: 'https://nodejs.org/',
+                icon: 'graphql',
+                name: 'GraphQL',
+                url: 'https://graphql.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'webpack',
-                name: 'webpack',
-                url: 'https://webpack.js.org/',
+                icon: 'nodejs',
+                name: 'Node.js',
+                url: 'https://nodejs.org/',
                 color: '#61DAFB'
               },
               {
@@ -100,21 +100,9 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'docker',
-                name: 'Docker',
-                url: 'https://gatsbyjs.org/',
-                color: '#61DAFB'
-              },
-              {
                 icon: 'git',
                 name: 'Git',
                 url: 'https://git-scm.com/',
-                color: '#61DAFB'
-              },
-              {
-                icon: 'graphql',
-                name: 'GraphQL',
-                url: 'https://graphql.org/',
                 color: '#61DAFB'
               },
             ]} />
