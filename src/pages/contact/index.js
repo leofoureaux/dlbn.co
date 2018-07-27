@@ -34,9 +34,6 @@ class Contact extends React.Component {
         fields: `
         Name: ${e.target.name.value || 'n/a'}
         Company: ${e.target.company.value || 'n/a'}
-        Phone: ${e.target.phone.value || 'n/a'}
-        Budget: ${e.target.budget.value || 'n/a'}
-        Type: ${e.target.type.value || 'n/a'}
         Description: ${e.target.description.value || 'n/a'}
         `,
         _subject: '🚀 dlbn.co contact',
@@ -77,7 +74,7 @@ class Contact extends React.Component {
           {this.state.sent ? (
             <p className="lead">👏🎉 {messages.form.submit.sent}</p>
           ) : (
-            <form onSubmit={this.handleSubmit} className="row" style={{maxWidth: 800}}>
+            <form onSubmit={this.handleSubmit} style={{maxWidth: 800}}>
               <input type="text" name="_gotcha" style={{display:'none'}} />
               <div className="col-12 col-md-6">
                 <div className="form-group">
@@ -95,32 +92,6 @@ class Contact extends React.Component {
                 <div className="form-group">
                   <label htmlFor="email">{messages.form.email.label}*</label>
                   <input type="email" className="form-control" id="email" name="email" required />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="phone">{messages.form.phone.label}</label>
-                  <input type="phone" className="form-control" id="phone" name="phone" />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="budget">{messages.form.budget.label}*</label>
-                  <select className="form-control" name="budget" id="budget" required>
-                    {messages.form.budget.options.map((option, index) => (
-                      <option key={`${option}-${index}`} value={index === 0 ? '' : option}>{option}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="type">{messages.form.type.label}*</label>
-                  <select className="form-control" name="type" id="type" required>
-                    {messages.form.type.options.map((option, index) => (
-                      <option key={`${option}-${index}`} value={index === 0 ? '' : option}>{option}</option>
-                    ))}
-                  </select>
                 </div>
               </div>
               <div className="col-12">
