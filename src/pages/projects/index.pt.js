@@ -34,7 +34,7 @@ const projects = [
         <p>Time de vôlei em São Paulo.</p>
         <p>No website, o usuário pode consultar próximas partidas, competições que o clube está participando, membros da equipe e notícias.</p>
         <p>O website foi feito usando o <a href="https://www.gatsbyjs.org/">Gatsby</a> e todo o conteúdo é gerenciado através do <a href="https://www.contentful.com/">Contentful CMS</a>. Toda vez que um artigo é criado ou atualizado, uma pipeline é ativada para compilar as páginas e fazer redeploy do website.</p>
-        <p>O projeto foi desenvolvido junto com o <a href="http://quartzostudio.com">Quartzo Studio</a>, que forneceu as especificações de UI/UX.</p>
+        <p>O projeto foi desenvolvido junto com o <a href="http://quartzostudio.com">Quartzo Studio</a>.</p>
       </div>
     )
   },
