@@ -82,7 +82,7 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'nodejs',
+                icon: 'node-dot-js',
                 name: 'Node.js',
                 url: 'https://nodejs.org/',
                 color: '#61DAFB'
