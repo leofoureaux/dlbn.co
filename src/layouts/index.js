@@ -42,35 +42,17 @@ const TemplateWrapper = ({ children }) => {
             <meta name="theme-color" content="#ffffff" />
           </Helmet>
           <header>
-            <div className="container py-4 py-md-5">
+            <div className="container-fluid py-4 py-md-5">
               <div className="d-flex align-items-center">
-                <Link to={`/${locale}/`}><h3 className="mb-0" style={{color: 'white'}}>dlbn.co</h3><small className="text-muted">{locale === 'en' ? 'web development' : 'desenvolvimento web'}</small></Link>
-                <nav style={{flex: 1}}>
-                  <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
-                    <li><Link to={`/${locale}/projects`}>{messages[locale || defaultLocale].nav.projects}</Link></li>
-                    <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li>
-                  </ul>
-                </nav>
+                <Link to={`/${locale}/`}><h3 className="mb-0" style={{color: 'white'}}>dlbn.co</h3></Link>
               </div>
             </div>
           </header>
-          <div className="container" style={{flex: 1}}>
+          <div className="container-fluid" style={{flex: 1}}>
             <main>
               {children()}
             </main>
           </div>
-          <footer className="py-3">
-            <div className="container">
-              <div className="separator"></div>
-              <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
-                <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="18"/></a></li>
-              </ul>
-              <p className="mb-0">mateus@dalbinaco.com</p>
-            </div>
-          </footer>
         </div>
       </IntlProvider>
     )}
