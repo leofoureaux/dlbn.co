@@ -1,25 +1,14 @@
 module.exports = {
   en: {
     meta: {
-      title: 'dlbn.co — Front-end web development',
-      description: 'Front-end developer. I build websites, webapps and beautiful UIs using the latest technology available.'
+      title: 'dlbn.co — Software developer',
+      description: 'Software developer with a focus on front end.'
     },
-    nav: {
-      projects: 'Projects',
-      about: 'About',
-      contact: 'Contact'
-
-    }
   },
   pt: {
     meta: {
-      title: 'dlbn.co — Desenvolvimento front-end',
-      description: 'Eu crio websites, webapps e belas interfaces usando as tecnologias mais recentes.'
+      title: 'dlbn.co — Desenvolvedor de software',
+      description: 'Desenvolvedor de software com foco em front end.'
     },
-    nav: {
-      about: 'Sobre',
-      projects: 'Projetos',
-      contact: 'Contato'
-    }
   }
 }
