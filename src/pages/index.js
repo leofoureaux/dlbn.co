@@ -8,6 +8,7 @@ import twitterLogo from '../assets/img/social/twitter.svg'
 import githubLogo from '../assets/img/social/github.svg'
 import instagramLogo from '../assets/img/social/instagram.svg'
 import linkedinLogo from '../assets/img/social/linkedin.svg'
+import mediumLogo from '../assets/img/social/medium.svg'
 
 class IndexPage extends React.Component {
   constructor() {
@@ -75,10 +76,11 @@ class IndexPage extends React.Component {
           </section>
           <div className="d-block">
             <ul className="row p-0 list-unstyled">
-              <li className="col" style={{flex: 0}}><a href="https://github.com/dlbnco"><img src={githubLogo} alt="" height="18"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="18"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="18"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="18"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://github.com/dlbnco"><img src={githubLogo} alt="" height="16"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="16"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="16"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="16"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://medium.com/@dalbinaco"><img src={mediumLogo} alt="" height="16"/></a></li>
             </ul>
             <p className="mb-0">mateus@dalbinaco.com</p>
           </div>
