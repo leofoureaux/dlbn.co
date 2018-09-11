@@ -80,7 +80,7 @@ class IndexPage extends React.Component {
               <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="16"/></a></li>
               <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="16"/></a></li>
               <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="16"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://medium.com/@dalbinaco"><img src={mediumLogo} alt="" height="16"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://medium.com/@dlbnco"><img src={mediumLogo} alt="" height="16"/></a></li>
             </ul>
             <p className="mb-0">mateus@dalbinaco.com</p>
           </div>
