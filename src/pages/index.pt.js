@@ -3,9 +3,37 @@ import IndexPage from './index'
 
 const messages = {
   tagline: {
-    title: 'Eu crio',
-    services: [
-      'websites', 'aplicativos web', 'belas interfaces'
+    noun: 'Eu',
+    verbs: ['crio', 'viajo', 'amo', 'pratico', 'sou'],
+    things: [
+      {
+        verb: 0,
+        name: 'websites',
+      },
+      {
+        verb: 0,
+        name: 'web apps',
+      },
+      {
+        verb: 1,
+        name: 'o mundo',
+      },
+      {
+        verb: 2,
+        name: 'amendoim',
+      },
+      {
+        verb: 2,
+        name: 'pedalar',
+      },
+      {
+        verb: 3,
+        name: 'yoga',
+      },
+      {
+        verb: 4,
+        name: 'Mateus, prazer em conhecê-lo',
+      },
     ],
     button: 'Vamos conversar!'
   },
@@ -13,13 +41,19 @@ const messages = {
     title: 'Sobre',
     description: (
       <div>
-        <p className="lead">Desenvolvedor front-end. Criador do <a href="http://tripby.org">tripby.org</a></p>
-        <p>Eu amo tecnologia e como ela conduz a evolução humana. É animador fazer parte disto.</p>
-        <p>Atualmente estou vivendo como nômade, mochilando pela América do Sul.</p>
+        <p className="lead">Desenvolvedor de software com foco em front end.</p>
+        <p>Atualmente em Santiago, Chile</p>
       </div>
     ),
     tech: 'Tecnologias que gosto de usar'
-  }
+  },
+  projects: [
+    {
+      title: 'TRIPBY',
+      url: 'https://tripby.org',
+      description: 'Informações sobre psicoativos'
+    },
+  ]
 }
 
 export default (props) => <IndexPage messages={messages} locale='pt'/>
