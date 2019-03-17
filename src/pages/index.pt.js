@@ -49,6 +49,11 @@ const messages = {
   },
   projects: [
     {
+      title: "ekādaśi",
+      url: "https://ekadasi.dlbn.co",
+      description: "Calendário Ekadashi e visualizador da lua",
+    },
+    {
       title: "trippr.live",
       url: "https://trippr.live",
       description: "App de ridesharing para eventos de música",
