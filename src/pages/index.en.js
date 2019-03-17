@@ -49,6 +49,11 @@ const messages = {
   },
   projects: [
     {
+      title: "ekādaśi",
+      url: "https://ekadasi.dlbn.co",
+      description: "Minimalistic Ekadashi calendar and moon visualizer",
+    },
+    {
       title: "trippr.live",
       url: "https://trippr.live",
       description: "Ridesharing app for music events",
