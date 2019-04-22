@@ -106,7 +106,7 @@ class IndexPage extends React.Component {
                 </a>
               </li>
             </ul>
-            <p className="mb-0">mateus@dalbinaco.com</p>
+            <p className="mb-0">mateus@dlbn.co</p>
           </div>
           <div className="separator my-5" />
           <section className="mb-3">
