@@ -1,14 +1,14 @@
 module.exports = {
   en: {
     meta: {
-      title: 'dlbn.co — Software developer',
-      description: 'Software developer with a focus on front end.'
+      title: "dlbn.co — Mateus Dal Bianco Ferreira",
+      description: "Software developer, raver, cyclist and yogi.",
     },
   },
   pt: {
     meta: {
-      title: 'dlbn.co — Desenvolvedor de software',
-      description: 'Desenvolvedor de software com foco em front end.'
+      title: "dlbn.co — Mateus Dal Bianco Ferreira",
+      description: "Desenvolvedor de software, raver, ciclista e yogi.",
     },
-  }
-}
+  },
+};
