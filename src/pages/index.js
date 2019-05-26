@@ -106,7 +106,7 @@ class IndexPage extends React.Component {
                 </a>
               </li>
             </ul>
-            <p className="mb-0">mateus@dalbinaco.com</p>
+            <p className="mb-0">mateus@dlbn.co</p>
           </div>
           <div className="separator my-5" />
           <section className="mb-3">
@@ -123,36 +123,6 @@ class IndexPage extends React.Component {
               ))}
             </div>
           </section>
-          <div className="separator my-5" />
-          <h4>{messages.about.tech}</h4>
-          <Badges
-            skills={[
-              {
-                icon: "react",
-                name: "React",
-                url: "https://reactjs.org/",
-                color: "#61DAFB",
-              },
-              {
-                icon: "redux",
-                name: "Redux",
-                url: "https://redux.js.org/",
-                color: "#61DAFB",
-              },
-              {
-                icon: "graphql",
-                name: "GraphQL",
-                url: "https://graphql.org/",
-                color: "#61DAFB",
-              },
-              {
-                icon: "gatsby",
-                name: "Gatsby",
-                url: "https://gatsbyjs.org/",
-                color: "#61DAFB",
-              },
-            ]}
-          />
         </div>
       );
     }

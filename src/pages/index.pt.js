@@ -20,7 +20,7 @@ const messages = {
       },
       {
         verb: 2,
-        name: "amendoim",
+        name: "musica eletrônica",
       },
       {
         verb: 2,
@@ -41,8 +41,13 @@ const messages = {
     title: "Sobre",
     description: (
       <div>
-        <p className="lead">Desenvolvedor de software com foco em front end.</p>
-        <p>Atualmente em Minas Gerais, Brasil</p>
+        <p className="lead">Olá 👋</p>
+        <p>Sou desenvolvedor de software, raver, ciclita e yogi.</p>
+        <p>
+          Estou viajando como nômade enquanto trabalho remotamente
+          <br /> e curtindo o que mundo tem para oferecer.
+        </p>
+        <p>Atualmente na Europa 🇪🇺</p>
       </div>
     ),
     tech: "Tecnologias que gosto de usar",

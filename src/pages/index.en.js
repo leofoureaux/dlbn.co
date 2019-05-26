@@ -20,7 +20,7 @@ const messages = {
       },
       {
         verb: 2,
-        name: "peanuts",
+        name: "electronic music",
       },
       {
         verb: 2,
@@ -41,8 +41,13 @@ const messages = {
     title: "About",
     description: (
       <div>
-        <p className="lead">Software developer with a focus on front end.</p>
-        <p>Currently based in Minas Gerais, Brazil</p>
+        <p className="lead">Hi 👋</p>
+        <p>I'm a software developer, raver, cyclist and yogi.</p>
+        <p>
+          I've been traveling as a nomad while working remotely
+          <br /> and enjoying the what the world has to offer.
+        </p>
+        <p>Currently in Europe 🇪🇺</p>
       </div>
     ),
     tech: "Tech I like to work with",
