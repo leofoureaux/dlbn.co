@@ -45,7 +45,7 @@ const messages = {
         <p>I'm a software developer, raver, cyclist and yogi.</p>
         <p>
           I've been traveling as a nomad while working remotely
-          <br /> and enjoying the what the world has to offer.
+          <br /> and enjoying what the world has to offer.
         </p>
         <p>Currently in Europe 🇪🇺</p>
       </div>
