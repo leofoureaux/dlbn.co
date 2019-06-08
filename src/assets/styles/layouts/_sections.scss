@@ -1,9 +1,0 @@
-section {
-  padding: 1rem 0;
-}
-
-@include media-breakpoint-up(md) {
-  .container-fluid {
-    padding: 0 32px;
-  }
-}

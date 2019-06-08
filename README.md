@@ -1,2 +1,3 @@
 # dlbn.co
-Personal website at [dlbn.co](http://dlbn.co)
+
+Personal website at [dlbn.co](https://dlbn.co)
