@@ -1,6 +1,6 @@
-import React from "react"
-import { Flex, Box } from "rebass"
-import styled from "styled-components"
+import React from "react";
+import { Flex, Box } from "rebass";
+import styled from "styled-components";
 
 const links = [
   {
@@ -23,30 +23,27 @@ const links = [
     id: "instagram",
     href: "https://instagram.com/dlbnco",
   },
-]
+];
 
 const Icon = styled.img`
   filter: invert(1);
-`
+`;
 
 const Contact = () => {
   return (
     <div>
       <Flex mx={-3} mb={3}>
-        {links.map(item => (
+        {links.map((item) => (
           <Box px={3} key={item.id}>
             <a href={item.href}>
-              <Icon
-                width="16"
-                src={`http://simpleicons.org/icons/${item.id}.svg`}
-              />
+              <Icon width="16" src={`https://simpleicons.org/icons/${item.id}.svg`} />
             </a>
           </Box>
         ))}
       </Flex>
       <p>mateus@dlbn.co</p>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
