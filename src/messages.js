@@ -41,16 +41,11 @@ const messages = {
       description: "Minimalistic Ekadashi calendar and moon visualizer",
     },
     {
-      title: "trippr.live",
-      url: "https://trippr.live",
-      description: "Ridesharing app for music events",
-    },
-    {
       title: "tripby.org",
       url: "https://tripby.org",
       description: "Psychoactive drug info",
     },
   ],
-}
+};
 
-export default messages
+export default messages;

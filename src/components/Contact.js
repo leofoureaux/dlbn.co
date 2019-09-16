@@ -19,14 +19,17 @@ const links = [
     id: "medium",
     href: "https://medium.com/@dlbnco",
   },
-  {
-    id: "instagram",
-    href: "https://instagram.com/dlbnco",
-  },
 ];
 
 const Icon = styled.img`
   filter: invert(1);
+`;
+
+const InvisibleInput = styled.input`
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  border: 0;
 `;
 
 const Contact = () => {
@@ -41,7 +44,9 @@ const Contact = () => {
           </Box>
         ))}
       </Flex>
-      <p>mateus@dlbn.co</p>
+      <p>
+        💌 <InvisibleInput value="mateus@dlbn.co" />
+      </p>
     </div>
   );
 };

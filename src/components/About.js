@@ -1,17 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import { fontSize, space } from "styled-system"
+import React from "react";
+import styled from "styled-components";
+import { fontSize, space } from "styled-system";
 
 const P = styled.p.attrs(() => ({
   mb: 3,
 }))`
   ${fontSize}
   ${space}
-`
+`;
 
 P.defaultProps = {
   fontSize: 2,
-}
+};
 
 const About = () => {
   return (
@@ -28,13 +28,13 @@ const About = () => {
         <br /> and enjoying what the world has to offer.
       </P>
       <P>
-        Currently in Europe{" "}
+        Currently in Romania{" "}
         <span role="img" aria-label="europe flag">
-          🇪🇺
+          🇷🇴
         </span>
       </P>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
