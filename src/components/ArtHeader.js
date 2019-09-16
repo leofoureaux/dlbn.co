@@ -24,16 +24,16 @@ const Wrapper = styled.div`
   ${width}
   position: absolute;
   z-index: 0;
-  transition: 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transform: translate(-50%, -50%);
+  will-change: transform, rotate;
   ${({ scroll }) => {
     let transformFactor = 50;
-    transformFactor = Math.max(10, 50 / (1 + scroll / 200));
+    transformFactor = Math.max(10, 50 / (1 + scroll / 500));
     return css`
-      transform: translate(-${transformFactor}%, -${transformFactor}%) rotate(${scroll / 180}rad);
+      transform: translate(-${transformFactor}%, -${transformFactor}%) rotate(${scroll / 4}deg);
       opacity: ${Math.min(1, 100 / scroll)};
-      rotate: ${scroll / 2}deg;
-      filter: hue-rotate(${scroll / 2}deg);
+      filter: hue-rotate(${scroll}deg);
     `;
   }}
 `;
@@ -46,7 +46,7 @@ const ArtHeader = () => {
   const [scroll, setScroll] = useState();
   const scrollListener = debounce(() => {
     if (typeof window !== "undefined") {
-      setScroll(window.scrollY);
+      window.requestAnimationFrame(() => setScroll(window.scrollY));
     }
   }, 100);
   useEffect(() => {
@@ -65,7 +65,7 @@ const ArtHeader = () => {
         query {
           image: file(relativePath: { eq: "14-colored.png" }) {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
+              fluid(maxWidth: 1440, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
