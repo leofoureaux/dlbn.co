@@ -5,14 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { space } from "styled-system"
-import styled, { createGlobalStyle } from "styled-components"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import { space } from "styled-system";
+import styled, { createGlobalStyle } from "styled-components";
 
-import Header from "./header"
-import Meta from "./Meta"
+import Header from "./header";
+import Meta from "./Meta";
+import ArtHeader from "./ArtHeader";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans&display=swap');
@@ -31,12 +32,13 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: 'Fira Mono', monospace;
   }
-`
+`;
 
 const Body = styled.div`
   min-height: 100vh;
   background: black;
-`
+  position: relative;
+`;
 
 const Container = styled.div.attrs(() => ({
   px: [3, 4],
@@ -44,7 +46,9 @@ const Container = styled.div.attrs(() => ({
 }))`
   ${space}
   margin: 0 auto;
-`
+  position: relative;
+  z-index: 1;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -57,11 +61,12 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Meta />
         <GlobalStyle />
         <Body>
+          <ArtHeader />
           <Container>
             <Header mb={[4, 5]} siteTitle={data.site.siteMetadata.title} />
             <main>{children}</main>
@@ -70,10 +75,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
