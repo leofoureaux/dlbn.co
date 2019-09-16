@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled, { css } from "styled-components";
 import { width } from "styled-system";
+import debounce from "lodash/debounce";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -43,11 +44,11 @@ Wrapper.defaultProps = {
 
 const ArtHeader = () => {
   const [scroll, setScroll] = useState();
-  const scrollListener = () => {
+  const scrollListener = debounce(() => {
     if (typeof window !== "undefined") {
       setScroll(window.scrollY);
     }
-  };
+  }, 100);
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", scrollListener);
