@@ -45,7 +45,10 @@ const Contact = () => {
         ))}
       </Flex>
       <p>
-        💌 <InvisibleInput value="mateus@dlbn.co" />
+        <span role="img" aria-label="love-letter">
+          💌
+        </span>{" "}
+        <InvisibleInput value="mateus@dlbn.co" />
       </p>
     </div>
   );

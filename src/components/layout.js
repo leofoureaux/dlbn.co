@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
       color: #3cf0b9;
     }
   }
-  p {
+  p,ul,ol,li {
     font-family: 'Fira Mono', monospace;
   }
 `;
@@ -52,7 +52,7 @@ const Container = styled.div.attrs(() => ({
   z-index: 1;
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, discreet }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -68,7 +68,7 @@ const Layout = ({ children }) => (
         <Meta />
         <GlobalStyle />
         <Body>
-          <ArtHeader />
+          <ArtHeader discreet={discreet} />
           <Container>
             <Header mb={[4, 5]} siteTitle={data.site.siteMetadata.title} />
             <main>{children}</main>
@@ -81,6 +81,11 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  discreet: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  discreet: false,
 };
 
 export default Layout;
