@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import styled, { css } from "styled-components";
-import { width } from "styled-system";
-import debounce from "lodash/debounce";
+import React, { useEffect, useState } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import styled, { css } from 'styled-components';
+import { width } from 'styled-system';
+import debounce from 'lodash/debounce';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -27,35 +27,37 @@ const Wrapper = styled.div`
   transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transform: translate(-50%, -50%);
   will-change: transform, rotate;
-  ${({ scroll }) => {
+  ${({ scroll, discreet }) => {
     let transformFactor = 50;
     transformFactor = Math.max(10, 50 / (1 + scroll / 500));
+    const maxOpacity = discreet ? 0.4 : 1;
     return css`
-      transform: translate(-${transformFactor}%, -${transformFactor}%) rotate(${scroll / 4}deg);
-      opacity: ${Math.min(1, 100 / scroll)};
+      transform: translate(-${transformFactor}%, -${transformFactor}%)
+        rotate(${scroll / 4}deg);
+      opacity: ${Math.min(maxOpacity, 100 / scroll)};
       filter: hue-rotate(${scroll}deg);
     `;
   }}
 `;
 
 Wrapper.defaultProps = {
-  width: ["144vw", "100vw", "70vw", "50vw"],
+  width: ['144vw', '100vw', '70vw', '50vw'],
 };
 
-const ArtHeader = () => {
-  const [scroll, setScroll] = useState();
+const ArtHeader = ({ discreet }) => {
+  const [scroll, setScroll] = useState(0);
   const scrollListener = debounce(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       window.requestAnimationFrame(() => setScroll(window.scrollY));
     }
   }, 100);
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", scrollListener);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', scrollListener);
     }
     return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("scroll", scrollListener);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', scrollListener);
       }
     };
   }, []);
@@ -72,8 +74,8 @@ const ArtHeader = () => {
           }
         }
       `}
-      render={(data) => (
-        <Wrapper scroll={scroll}>
+      render={data => (
+        <Wrapper scroll={scroll} discreet={discreet}>
           <Image fluid={data.image.childImageSharp.fluid} />
         </Wrapper>
       )}

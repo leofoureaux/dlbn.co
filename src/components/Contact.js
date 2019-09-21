@@ -1,23 +1,23 @@
-import React from "react";
-import { Flex, Box } from "rebass";
-import styled from "styled-components";
+import React from 'react';
+import { Flex, Box } from 'rebass';
+import styled from 'styled-components';
 
 const links = [
   {
-    id: "github",
-    href: "https://github.com/dlbnco",
+    id: 'github',
+    href: 'https://github.com/dlbnco',
   },
   {
-    id: "twitter",
-    href: "https://twitter.com/dlbnco",
+    id: 'twitter',
+    href: 'https://twitter.com/dlbnco',
   },
   {
-    id: "linkedin",
-    href: "https://linkedin.com/in/dlbnco",
+    id: 'linkedin',
+    href: 'https://linkedin.com/in/dlbnco',
   },
   {
-    id: "medium",
-    href: "https://medium.com/@dlbnco",
+    id: 'soundcloud',
+    href: 'https://soundcloud.com/dlbnco/likes',
   },
 ];
 
@@ -35,17 +35,23 @@ const InvisibleInput = styled.input`
 const Contact = () => {
   return (
     <div>
-      <Flex mx={-3} mb={3}>
-        {links.map((item) => (
-          <Box px={3} key={item.id}>
+      <Flex alignItems="center" mx={[-3, null, -2]} mb={3}>
+        {links.map(item => (
+          <Box px={[3, null, 2]} key={item.id}>
             <a href={item.href}>
-              <Icon width="16" src={`https://simpleicons.org/icons/${item.id}.svg`} />
+              <Icon
+                width="16"
+                src={`https://simpleicons.org/icons/${item.id}.svg`}
+              />
             </a>
           </Box>
         ))}
       </Flex>
       <p>
-        💌 <InvisibleInput value="mateus@dlbn.co" />
+        <span role="img" aria-label="love-letter">
+          💌
+        </span>{' '}
+        <InvisibleInput value="mateus@dlbn.co" />
       </p>
     </div>
   );

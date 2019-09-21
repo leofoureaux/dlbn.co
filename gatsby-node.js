@@ -1,7 +1,67 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-// You can delete this file if you're not using it
+const getSlugFromFilePath = require('./src/utils/getSlugFromFilePath');
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+
+  const blogPost = path.resolve(`./src/templates/article.js`);
+  const result = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/blog/" } }
+          sort: { fields: frontmatter___date, order: DESC }
+        ) {
+          nodes {
+            id
+            html
+            excerpt
+            fileAbsolutePath
+            frontmatter {
+              title
+              date
+            }
+          }
+        }
+      }
+    `,
+  );
+
+  if (result.errors) {
+    throw result.errors;
+  }
+
+  // Create blog posts pages.
+  const articles = result.data.allMarkdownRemark.nodes;
+
+  articles.forEach((article, index) => {
+    const previous =
+      index === articles.length - 1 ? null : articles[index + 1].node;
+    const next = index === 0 ? null : articles[index - 1].node;
+
+    createPage({
+      path: `articles/${getSlugFromFilePath(article.fileAbsolutePath)}`,
+      component: blogPost,
+      context: {
+        article,
+        previous,
+        next,
+      },
+    });
+  });
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    });
+  }
+};
