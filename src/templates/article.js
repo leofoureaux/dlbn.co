@@ -64,11 +64,11 @@ const Container = styled.div`
 `;
 
 const article = ({ pageContext: { article } }) => {
-  const { title, excerpt, date } = article.frontmatter;
+  const { title, date } = article.frontmatter;
   const datetime = new Date(date);
   return (
     <Layout discreet>
-      <Meta title={title} description={excerpt}></Meta>
+      <Meta title={title} description={article.excerpt}></Meta>
       <Container>
         <Text fontSize={1} mb={4}>
           <Link to="/" style={{ display: 'inline-block' }}>
