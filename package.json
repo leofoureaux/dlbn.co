@@ -20,6 +20,7 @@
     "gatsby-source-filesystem": "^2.1.24",
     "gatsby-transformer-remark": "^2.6.23",
     "gatsby-transformer-sharp": "^2.1.21",
+    "github-markdown-css": "^3.0.1",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

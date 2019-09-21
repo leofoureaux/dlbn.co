@@ -1,23 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import Meta from '../components/Meta';
 import { format } from 'date-fns';
 import Text from '../components/Text';
 import { Link } from 'gatsby';
+import githubcss from 'github-markdown-css';
 
 const Container = styled.div`
+  ${githubcss}
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.5;
-  font-size: 1.2rem;
+  .markdown-body {
+    blockquote {
+      color: inherit;
+    }
+    a,
+    a:link {
+      text-decoration: none;
+      color: #44bce3;
+      &:hover {
+        color: #3cf0b9;
+      }
+    }
+    color: inherit;
+    line-height: 1.5;
+    font-family: inherit;
+    pre {
+      background: #212121;
+    }
+  }
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    margin-bottom: 1rem;
+    border: 0 !important;
   }
   h1 {
     font-size: 2.5rem;
@@ -37,29 +57,24 @@ const Container = styled.div`
   h6 {
     font-size: 1rem;
   }
-  p {
-    &:not(:last-of-type) {
-      margin-bottom: 1.5rem;
-    }
-  }
-  ul,
-  ol {
-    margin-left: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  /* custom list bullets */
-  ul {
-    li::before {
-      content: '•';
-      display: inline-block;
-      width: 1em;
-    }
+  iframe {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 `;
 
 const article = ({ pageContext: { article } }) => {
   const { title, excerpt, date } = article.frontmatter;
   const datetime = new Date(date);
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const iframes = document.querySelectorAll('iframe');
+      iframes.forEach(iframe => {
+        iframe.addEventListener('load', () => {});
+      });
+      // console.log(iframes[0].contents().height());
+    }
+  }, []);
   return (
     <Layout discreet>
       <Meta title={title} description={excerpt}></Meta>
@@ -75,7 +90,10 @@ const article = ({ pageContext: { article } }) => {
         <Text as="p" fontSize={0} variant="secondary" mb={3}>
           {format(datetime, 'MMMM dd, yyyy')}
         </Text>
-        <div dangerouslySetInnerHTML={{ __html: article.html }} />
+        <div
+          className="markdown-body"
+          dangerouslySetInnerHTML={{ __html: article.html }}
+        />
       </Container>
     </Layout>
   );

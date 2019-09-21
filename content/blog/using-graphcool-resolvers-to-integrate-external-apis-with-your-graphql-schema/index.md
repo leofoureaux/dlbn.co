@@ -21,7 +21,7 @@ So, what if Graphcool could do this query for me and handle me back the data as 
 
 > With a resolver you can provide custom queries and mutations that are powered by a function that you provide.
 
-![](https://cdn-images-1.medium.com/max/2410/1*wMo0-8bKZXgsi6IUzHFDYQ.png)
+![](./images/1.png)
 
 ## Setting up a Resolver function
 
@@ -37,7 +37,7 @@ The query to parse a GooglePlace accepts one argument: id
 
 My file looks like this:
 
-<iframe src="https://medium.com/media/96d4812a9368b4bdd948a4a43aecf3f2" frameborder=0></iframe>
+<iframe src="https://gist.github.com/dlbnco/d6bebc0c1c74c071c27e4c9c416d8c80.pibb"></iframe>
 
 ### Inline code
 
@@ -45,13 +45,13 @@ My file looks like this:
 
 In my case, I will just call the Google Places API using the provided id and my API key, and return the data as the payload field on my GooglePlace type:
 
-<iframe src="https://medium.com/media/13ed95a6b77dd06284b8720088942918" frameborder=0></iframe>
+<iframe src="https://gist.github.com/dlbnco/335faca3cd7e7843b65514f3a2f5139b.pibb"></iframe>
 
-**Done! **🎉
+**Done!**🎉
 
 Now I can query the Google Places API directly through my Graphcool backend using GraphQL:
 
-![](https://cdn-images-1.medium.com/max/3758/1*la_w9WO4N3BRO6s3uAVXbg.png)
+![](./images/2.png)
 
 For more info, check out the [Graphcool documentation on Resolver functions](https://www.graph.cool/docs/reference/functions/resolvers-su6wu3yoo2).
 

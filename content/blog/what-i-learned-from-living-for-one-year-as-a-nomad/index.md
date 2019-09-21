@@ -3,7 +3,7 @@ title: What I learned from living for one year as a nomad
 date: 2018-12-02
 ---
 
-Moving from a house to another (subway in Santiago, Chile)
+![Moving from a house to another (subway in Santiago, Chile)](./images/subway-santiago.jpeg)_Moving from a house to another (subway in Santiago, Chile)_
 
 About 12 months ago I was in southern Brazil going from Joinville, the city I lived, to Curitiba, where I would volunteer for a few weeks in a [hostel improving their website](http://www.hostelsocial.com.br).
 
@@ -49,7 +49,7 @@ I found myself doing things like:
 
 - doing SEO and Google Analytics consulting
 
-![Short mission to search for firewood to be used in the kitchen to cook ([eco yoga village in Minas Gerais, Brazil](http://vrindabhumi.com/))](https://cdn-images-1.medium.com/max/6528/1*izC_TYUZS5DAgYUXNAUxjQ.jpeg)_Short mission to search for firewood to be used in the kitchen to cook ([eco yoga village in Minas Gerais, Brazil](http://vrindabhumi.com/))_
+![Short mission to search for firewood to be used in the kitchen to cook ([eco yoga village in Minas Gerais, Brazil](http://vrindabhumi.com/))](./images/firewood-hunt.jpeg)_Short mission to search for firewood to be used in the kitchen to cook ([eco yoga village in Minas Gerais, Brazil](http://vrindabhumi.com/))_
 
 Needless to say, I had great experiences volunteering and getting to know slightly-to-very different worlds. It broadened my perspective a lot. I learned a lot of stuff and met wonderful, wise, lovely people.
 
@@ -75,13 +75,13 @@ I spent a few months looking into freelancing websites and also building a very 
 
 I also started to focus on work exchange opportunities that were more related to technology and that I could do some of my own work more easily while in my free time. That worked for a while and it did feel better.
 
-![](https://cdn-images-1.medium.com/max/3840/1*omFtA4Fbx9yI0Iz5b8lbgA.jpeg)
+![](./images/remote-mosaic.jpeg)
 
-Somewhere in between, I met [\*\*Startaê](https://startae.com/)** — *a Brazilian team of designers and developers who help startups make positive changes around the world. *There was an opportunity to work with them as a developer in an interesting and aspiring project. **No office, no fixed work schedule, 100% remote\*\*. And with people that I later realized were creative, kind and fun.
+Somewhere in between, I met [**Startaê**](https://startae.com/) — *a Brazilian team of designers and developers who help startups make positive changes around the world. *There was an opportunity to work with them as a developer in an interesting and aspiring project. **No office, no fixed work schedule, 100% remote**. And with people that I later realized were creative, kind and fun.
 
 Although it happened just in time for me — like many things when you just let go — it was also kind of unexpected. The combination of the above was something not so usual for me.
 
-In the first weeks joining them, I was already surprised by how the whole team **not only advocates remote work but actually makes it happen. **In fact,\*\* **one of the projects driven by Startaê is [**Officeless](undefined)\*\* — a movement that supports and spreads valuable information on how to work remotely in a reliable way.
+In the first weeks joining them, I was already surprised by how the whole team **not only advocates remote work but actually makes it happen. In fact, one of the projects driven by Startaê is [Officeless](undefined)** — a movement that supports and spreads valuable information on how to work remotely in a reliable way.
 
 Working with Startaê not only **pushed me a lot closer to the way of traveling that feels right for me** but also brought a lot of learning. Working remotely in a distributed team forces you to improve how you communicate, organize yourself and how you take responsibility for what you do. It also meant approaching my destinations and my travel schedules in a slightly different way, now with more thought and looking more far ahead.
 
@@ -95,7 +95,7 @@ One of my goals was to go towards a minimalistic lifestyle, an idea that I got m
 
 I got surprised about how it is possible to live with so little. That meant changing some of my standards and habits, which I would likely want to keep even if I stopped traveling because they brought simplicity and flexibility to my life.
 
-![](https://cdn-images-1.medium.com/max/9312/1*-ipuRUx_CEthZjf0OumAQw.jpeg)
+![](./images/things.jpeg)
 
 What you can see in the picture above is mostly what I carry with me. The last time I checked it weighed about** 11kg total (~24lbs) and fits in a 44 L backpack**.
 
