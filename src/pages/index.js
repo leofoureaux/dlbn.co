@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import Separator from '../components/Separator';
 import Projects from '../components/Projects';
 import Articles from '../components/Articles';
+import Meta from '../components/Meta';
 
 const Section = styled(Box).attrs(() => ({
   as: 'section',
@@ -16,6 +17,7 @@ const Section = styled(Box).attrs(() => ({
 
 const IndexPage = () => (
   <Layout>
+    <Meta title="Mateus Dal Bianco" />
     <Section mb={4}>
       <Avatar />
     </Section>
