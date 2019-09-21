@@ -1,7 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import Layout from "../components/layout";
+import React from 'react';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import Meta from '../components/Meta';
+import { format } from 'date-fns';
+import Text from '../components/Text';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   max-width: 720px;
@@ -47,7 +50,7 @@ const Container = styled.div`
   /* custom list bullets */
   ul {
     li::before {
-      content: "•";
+      content: '•';
       display: inline-block;
       width: 1em;
     }
@@ -55,18 +58,27 @@ const Container = styled.div`
 `;
 
 const article = ({ pageContext: { article } }) => {
+  const { title, excerpt, date } = article.frontmatter;
+  const datetime = new Date(date);
   return (
     <Layout discreet>
+      <Meta title={title} description={excerpt}></Meta>
       <Container>
+        <Text fontSize={1} mb={4}>
+          <Link to="/" style={{ display: 'inline-block' }}>
+            ← back
+          </Link>
+        </Text>
         <h1>
           <strong>{article.frontmatter.title}</strong>
         </h1>
+        <Text as="p" fontSize={0} variant="secondary" mb={3}>
+          {format(datetime, 'MMMM dd, yyyy')}
+        </Text>
         <div dangerouslySetInnerHTML={{ __html: article.html }} />
       </Container>
     </Layout>
   );
 };
-
-article.propTypes = {};
 
 export default article;

@@ -10,7 +10,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/blog/" } }
+          sort: { fields: frontmatter___date, order: DESC }
+        ) {
           nodes {
             id
             html

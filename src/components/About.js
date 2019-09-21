@@ -1,38 +1,38 @@
-import React from "react";
-import styled from "styled-components";
-import { fontSize, space } from "styled-system";
+import React from 'react';
+import styled from 'styled-components';
+import { fontSize, space } from 'styled-system';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const P = styled.p.attrs(() => ({
+const Html = styled.div.attrs(() => ({
   mb: 3,
 }))`
   ${fontSize}
-  ${space}
+  max-width: 480px;
+  line-height: 1.5;
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
 `;
 
-P.defaultProps = {
+Html.defaultProps = {
   fontSize: 2,
 };
 
 const About = () => {
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(fileAbsolutePath: { regex: "//about/description/" }) {
+        html
+      }
+    }
+  `);
   return (
     <>
-      <P fontSize={3}>
-        Hi{" "}
-        <span role="img" aria-label="waving hand">
-          👋
-        </span>
-      </P>
-      <P>I'm a software developer, raver, cyclist and yogi.</P>
-      <P>
-        I've been traveling as a nomad while working remotely
-        <br /> and enjoying what the world has to offer.
-      </P>
-      <P>
-        Currently in Romania{" "}
-        <span role="img" aria-label="europe flag">
-          🇷🇴
-        </span>
-      </P>
+      <Html dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     </>
   );
 };
