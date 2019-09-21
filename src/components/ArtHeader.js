@@ -16,9 +16,7 @@ import debounce from 'lodash/debounce';
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = styled(Img)`
-  width: 100%;
-`;
+const Image = styled(Img)``;
 
 const Wrapper = styled.div`
   ${width}
