@@ -1,7 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-const getSlugFromFilePath = require("./src/utils/getSlugFromFilePath");
+const getSlugFromFilePath = require('./src/utils/getSlugFromFilePath');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -17,6 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
           nodes {
             id
             html
+            excerpt
             fileAbsolutePath
             frontmatter {
               title
@@ -25,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   );
 
   if (result.errors) {
@@ -36,7 +37,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const articles = result.data.allMarkdownRemark.nodes;
 
   articles.forEach((article, index) => {
-    const previous = index === articles.length - 1 ? null : articles[index + 1].node;
+    const previous =
+      index === articles.length - 1 ? null : articles[index + 1].node;
     const next = index === 0 ? null : articles[index - 1].node;
 
     createPage({
