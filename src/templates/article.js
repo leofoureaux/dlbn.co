@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import Meta from '../components/Meta';
@@ -66,15 +66,6 @@ const Container = styled.div`
 const article = ({ pageContext: { article } }) => {
   const { title, excerpt, date } = article.frontmatter;
   const datetime = new Date(date);
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      const iframes = document.querySelectorAll('iframe');
-      iframes.forEach(iframe => {
-        iframe.addEventListener('load', () => {});
-      });
-      // console.log(iframes[0].contents().height());
-    }
-  }, []);
   return (
     <Layout discreet>
       <Meta title={title} description={excerpt}></Meta>
