@@ -16,7 +16,13 @@ import debounce from 'lodash/debounce';
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = styled(Img)``;
+const Image = styled(Img)`
+  ${width}
+`;
+
+Image.defaultProps = {
+  width: ['144vw', '100vw', '70vw', '50vw'],
+};
 
 const Wrapper = styled.div`
   ${width}
@@ -37,10 +43,6 @@ const Wrapper = styled.div`
     `;
   }}
 `;
-
-Wrapper.defaultProps = {
-  width: ['144vw', '100vw', '70vw', '50vw'],
-};
 
 const ArtHeader = ({ discreet }) => {
   const [scroll, setScroll] = useState(0);
