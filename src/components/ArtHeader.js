@@ -17,12 +17,8 @@ import debounce from 'lodash/debounce';
  */
 
 const Image = styled(Img)`
-  ${width}
+  width: 640px;
 `;
-
-Image.defaultProps = {
-  width: ['144vw', '100vw', '70vw', '50vw'],
-};
 
 const Wrapper = styled.div`
   ${width}
@@ -67,7 +63,7 @@ const ArtHeader = ({ discreet }) => {
         query {
           image: file(relativePath: { eq: "14-colored.png" }) {
             childImageSharp {
-              fluid(maxWidth: 1440, quality: 100) {
+              fluid(maxWidth: 640, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
