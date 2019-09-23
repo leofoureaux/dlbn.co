@@ -30,6 +30,7 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
           },
           `gatsby-remark-smartypants`,
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
