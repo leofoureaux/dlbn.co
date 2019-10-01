@@ -19,7 +19,7 @@ const RealTimeComponent = () => {
 export default RealTimeComponent;
 ```
 
-<img src="./images/demo.gif" style="max-width:480px;display:block;margin:0 auto;" />
+<img src="./images/demo.gif" style="max-width:320px;display:block;margin:32px auto;" />
 
 # How it works
 
@@ -35,7 +35,11 @@ This will create an [interval](https://developer.mozilla.org/en-US/docs/Web/API/
 
 The interval is created just once when the component mounts — notice the empty array `[]` of dependencies at the end (you can also omit the `[]` if you want). The interval is also cleared when the component unmounts.
 
-Also notice that the main `useRealTime` function accepts an `interval` parameter, which is the amount of time in milliseconds between each update and is set to `100` as default.
+Also notice that the main `useRealTime` function accepts an `interval` parameter, which is the amount of time in milliseconds between each update and is set to `100` as default. You could use it like this:
+
+```js
+const now = useRealTime(200);
+```
 
 ---
 
