@@ -6,12 +6,16 @@ import { format } from 'date-fns';
 import Text from '../components/Text';
 import { Link } from 'gatsby';
 import githubcss from 'github-markdown-css';
+import draculaPrismCss from './dracula-prism.css';
 
 const Container = styled.div`
   ${githubcss}
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.5;
+  ul {
+    list-style: disc;
+  }
   .markdown-body {
     blockquote {
       color: inherit;
@@ -61,6 +65,7 @@ const Container = styled.div`
     width: 100%;
     margin-bottom: 1rem;
   }
+  ${draculaPrismCss}
 `;
 
 const article = ({ pageContext: { article } }) => {
