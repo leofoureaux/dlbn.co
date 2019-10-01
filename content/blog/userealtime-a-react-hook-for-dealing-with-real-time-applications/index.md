@@ -43,7 +43,7 @@ const now = useRealTime(200);
 
 ---
 
-At the end, we just return the current `now` value.
+In the end, we just return the current `now` value.
 
 # The hook
 
