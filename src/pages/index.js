@@ -10,6 +10,8 @@ import Separator from '../components/Separator';
 import Projects from '../components/Projects';
 import Articles from '../components/Articles';
 import Meta from '../components/Meta';
+import { Link } from 'gatsby';
+import Text from '../components/Text';
 
 const Section = styled(Box).attrs(() => ({
   as: 'section',
@@ -29,6 +31,12 @@ const IndexPage = () => (
     </Section>
     <Separator my={5} width={['50%', '25%']} height={24} />
     <Projects />
+    <Separator my={5} width={['50%', '25%']} height={24} />
+    <Section>
+      <Link to="/art" style={{ display: 'inline-block' }}>
+        <Text fontSize={[3, 4]}>art →</Text>
+      </Link>
+    </Section>
     <Separator my={5} width={['50%', '25%']} height={24} />
     <Section>
       <Articles />
