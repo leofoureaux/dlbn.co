@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import React from "react";
-import styled from "styled-components";
-import { space, fontSize } from "styled-system";
-import { Link } from "gatsby";
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+import { space, fontSize } from 'styled-system';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.header`
   ${space}
