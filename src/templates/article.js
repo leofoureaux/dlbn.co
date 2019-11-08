@@ -72,7 +72,7 @@ const article = ({ pageContext: { article } }) => {
   const { title, date, image } = article.frontmatter;
   let ogUrl;
   if (image) {
-    ogUrl = image.childImageSharp.fixed.src;
+    ogUrl = `./${image.childImageSharp.fixed.src}`;
   }
   const datetime = new Date(date);
   return (
