@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function Meta({ description, lang, meta, title, ...props }) {
+function Meta({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,7 +26,6 @@ function Meta({ description, lang, meta, title, ...props }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
   return (
     <Helmet
       htmlAttributes={{
@@ -35,6 +34,11 @@ function Meta({ description, lang, meta, title, ...props }) {
       title={title}
       titleTemplate={`%s — ${site.siteMetadata.title}`}
       meta={[
+        {
+          name: `og:image`,
+          content: `${process.env.GATSBY_PROTOCOL || 'https'}://${process.env
+            .GATSBY_DOMAIN || 'dlbn.co'}${image}`,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -68,7 +72,6 @@ function Meta({ description, lang, meta, title, ...props }) {
           content: metaDescription,
         },
       ].concat(meta)}
-      {...props}
     />
   );
 }
