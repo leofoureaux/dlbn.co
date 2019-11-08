@@ -1,7 +1,7 @@
 ---
 title: Sunwaves & Mioritmic Festival and the Romanian electronic music scene
 date: 2019-11-08
-image: './images/05.jpg'
+image: './images/03.jpg'
 ---
 
 A few years ago, I was discussing electronic music with a close friend after a festival experience we had together in Brazil. At that time, we were starting to dig deeper into it, searching for different and more sensible stuff. He then sent me an article from House Mag—a electronic music publication—entitled [Sunwaves and the Romanian sound](http://www.housemag.com.br/www/noticia/3936-review-sunwaves-e-o-som-da-romenia.html).
