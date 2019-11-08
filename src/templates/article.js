@@ -69,11 +69,15 @@ const Container = styled.div`
 `;
 
 const article = ({ pageContext: { article } }) => {
-  const { title, date } = article.frontmatter;
+  const { title, date, image } = article.frontmatter;
+  let ogUrl;
+  if (image) {
+    ogUrl = image.childImageSharp.fixed.src;
+  }
   const datetime = new Date(date);
   return (
     <Layout discreet>
-      <Meta title={title} description={article.excerpt}></Meta>
+      <Meta title={title} description={article.excerpt} image={ogUrl} />
       <Container>
         <Text fontSize={1} mb={4}>
           <Link to="/" style={{ display: 'inline-block' }}>
