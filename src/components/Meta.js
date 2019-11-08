@@ -76,7 +76,6 @@ function Meta({ description, lang, meta, title, ...props }) {
 Meta.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
 };
 
 Meta.propTypes = {
