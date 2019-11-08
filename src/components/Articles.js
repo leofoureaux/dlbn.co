@@ -52,7 +52,7 @@ const Articles = () => {
           <Box key={id} mb={3}>
             <Link to={`/articles/${slug}`} style={{ display: 'inline-block' }}>
               <Text fontSize={3}>{title}</Text>
-              <Text as="p" color="white">
+              <Text as="p" color="#fafafa">
                 {format(datetime, 'MMM dd, yyyy')}
               </Text>
             </Link>
