@@ -1,6 +1,7 @@
 ---
-title: Sunwaves & Mioritmic Festival; the Romanian electronic music scene and post-communism
-date: 2019-11-03
+title: Sunwaves & Mioritmic Festival and the Romanian electronic music scene
+date: 2019-11-08
+image: './images/05.jpg'
 ---
 
 A few years ago, I was discussing electronic music with a close friend after a festival experience we had together in Brazil. At that time, we were starting to dig deeper into it, searching for different and more sensible stuff. He then sent me an article from House Mag—a electronic music publication—entitled [Sunwaves and the Romanian sound](http://www.housemag.com.br/www/noticia/3936-review-sunwaves-e-o-som-da-romenia.html).
@@ -15,9 +16,15 @@ The article described something like nothing I've seen or heard before, but it w
 
 [Microhouse (Wikipedia)](https://en.wikipedia.org/wiki/Microhouse)
 
-Both genres are not exclusive from Romania, but the country surely has its own flavor. I fell in love with the style and started exploring it further through SoundCloud sets and YouTube videos from the festivals happening in Romania. At some point I knew that I should go there and check all of this in person.
+Both genres are not exclusive from Romania, but the country surely has its own flavor: the so-called Rominimal:
 
-In August 2019, after 3 months in western Europe, I went straight to Romania, led by two festivals that felt more iconic to me: Sunwaves and Mioritmic. I decided not only to attend those events but also spend 3 months in the country—the first month in București and two in Cluj-Napoca. I assumed that if I connect to the music I might just as well enjoy the place and the people.
+> One way to describe it would be minimal techno that has been handled with some very soft, velvety hands. It is simple, yet complicated in its simplicity. This sound opens new channels of consciousness for those who listen. The music is subtle and ethereal, laced with fragile effects over raw sound-drums and minimalist baseline. [...] It’s not about big drops, but it’s more about upholding and continuing the journey.
+
+[The ro-minimal story](https://www.assonantcircles.com/post/the-ro-minimal-story)
+
+I fell in love with the style and started exploring it further through SoundCloud sets and YouTube videos from the festivals happening in Romania. At some point I knew that I should go there and check all of this in person.
+
+In August 2019, after 3 months in western Europe, I went straight to Romania, led by two festivals that felt more iconic: Sunwaves and Mioritmic. I decided not only to attend those events but also spend 3 months in the country—the first month in București and two in Cluj-Napoca. I assumed that if I connect to the music I might just as well enjoy the place and the people.
 
 # Sunwaves Festival
 
@@ -40,6 +47,8 @@ I love how the festival scenography is just on point and harmonic with the whole
 ![](./images/04.jpg)
 
 The music was just perfect, I can say that it was the best music experience I ever had. I cannot say much about this, as I'm no musician and it's not something you can put into words effectively. But in general, it was the perfect expression of minimal electronic music, powered by good sound engineering, cozy atmosphere, nice people and beautiful scenery.
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/687690112&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
 At some point I realized that once my feet got sore from dancing and walking around, I could just get my shoes off and get some cold sea water treatment, which got them ready to several more hours of fun. I could also enjoy the music and dance with my feets in the sea, which felt amazing. The first time I did it I felt liberated for some reason. But eventually you have to go out and get some rest, so I never got to spend more than 12 hours at each day. I spent the first 2 days during the night until early morning, but then I realized that the magic really happens during daytime. You can see the sea and feel the warmth of the sun, and it has just the right amount of people, so you can walk and dance freely without bumping people around, but there is still enough people to maintain the energy.
 
@@ -93,8 +102,16 @@ Romania, as we know, is just 100 years old. It is a country that struggled to co
 
 [_Romania Pushes to Be Treated as a Fully Fledged E.U. Member_](https://www.nytimes.com/2019/09/21/world/europe/romania-eu-schengen-zone.html)
 
-It is also important to consider that the country went through around 40 years of communism, an era that certainly suppressed people's expression and identity. After the end of communism in the 90s, I feel that the country is still finding the way of recovering and rebuilding its identity.
-
-And Rominimal is part of that. For me, it became natural to associate minimal music with a modest, humble, rising and sometimes suppressed country.
+It is also important to consider that the country went through around 40 years of communism, an era that certainly suppressed people's expression and identity. After the end of communism in the 90s, I feel that the country is still finding the way of recovering and rebuilding its identity. I believe Rominimal is part of that.
 
 It's interesting how the mainstream culture there is kinda exaggerated and over the top, or kitsch, if you wish—flowers everywhere, colorful bathrooms and overly-ornamented items. Maybe this is a reaction to the country's underrepresentation, or a way to compensate the decades of grayness from the communist era. In the other hand, the underground—Rominimal—can be quite the opposite, while still sometimes maintaining some of the colorfulness—in a minimalist way, of course. It could be a reaction to the mainstream; or a way of embracing and expressing the country's fate. I believe it is some of those, combined.
+
+For me, it became natural to associate minimal music with a modest, humble, rising and sometimes suppressed country. Some people criticize the style though. I met a Romanian girl who said that she can't stand the style anymore and prefers to go to Berlin or Ibiza to party instead.
+
+> That’s been big in Romania for ten years or so, and it never dies. It doesn’t evolve, either; it’s somehow stuck in its own bubble. [...] I can’t explain how, in the city with the fastest internet in Europe, 18- to 20-year-old kids are stuck in only one genre and listening to the same loop for 12 hours. For me, it’s not a very interesting scene
+
+[After The Fire: How The Colectiv Tragedy Changed Bucharest](https://www.electronicbeats.net/after-the-fire-how-the-colectiv-tragedy-changed-bucharest/)
+
+What if it is "stuck in its own bubble" because that's just enough for them? I think that's the whole point of minimalism. I also believe that the style got enough attention to get consolidated and associated with the country, which must feel positive to people that are establishing themselves as a nation.
+
+Judgments aside, people enjoy it, and it's certainly alive.
