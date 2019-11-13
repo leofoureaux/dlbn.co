@@ -29,8 +29,8 @@ const Wrapper = styled.div`
   will-change: transform, rotate;
   ${({ scroll, discreet }) => {
     let transformFactor = 50;
-    transformFactor = Math.max(10, 50 / (1 + scroll / 500));
-    const maxOpacity = discreet ? 0.4 : 1;
+    transformFactor = Math.max(10, 66 / (1 + scroll / 500));
+    const maxOpacity = discreet ? 0.4 : 0.75;
     return css`
       transform: translate(-${transformFactor}%, -${transformFactor}%)
         rotate(${scroll / 4}deg);

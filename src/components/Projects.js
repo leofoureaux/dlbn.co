@@ -37,7 +37,7 @@ const Projects = () => {
           <Box as="li" p={3} key={project.title}>
             <a href={project.url}>
               <Title mb={2} fontSize={4}>
-                {project.title}
+                {project.title} →
               </Title>
             </a>
             <p>{project.description}</p>
