@@ -2,7 +2,7 @@
   "name": "dlbn.co",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "author": "Mateus Ferreira <mateus@dlbn.co>",
   "dependencies": {
     "date-fns": "^2.2.1",

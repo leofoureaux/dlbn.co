@@ -13,6 +13,9 @@ const Html = styled.div.attrs(() => ({
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
+  h2 {
+    margin-bottom: 1rem;
+  }
   p {
     margin-bottom: 1rem;
   }
