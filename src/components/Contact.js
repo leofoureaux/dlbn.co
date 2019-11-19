@@ -12,10 +12,6 @@ const links = [
     href: 'https://stackoverflow.com/users/4432910/mateus-ferreira',
   },
   {
-    id: 'twitter',
-    href: 'https://twitter.com/dlbnco',
-  },
-  {
     id: 'linkedin',
     href: 'https://linkedin.com/in/dlbnco',
   },
@@ -26,6 +22,10 @@ const links = [
   {
     id: 'strava',
     href: 'https://www.strava.com/athletes/17408874',
+  },
+  {
+    id: 'twitter',
+    href: 'https://twitter.com/dlbnco',
   },
 ];
 
