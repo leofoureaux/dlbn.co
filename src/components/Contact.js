@@ -8,8 +8,8 @@ const links = [
     href: 'https://github.com/dlbnco',
   },
   {
-    id: 'twitter',
-    href: 'https://twitter.com/dlbnco',
+    id: 'stackoverflow',
+    href: 'https://stackoverflow.com/users/4432910/mateus-ferreira',
   },
   {
     id: 'linkedin',
@@ -18,6 +18,14 @@ const links = [
   {
     id: 'soundcloud',
     href: 'https://soundcloud.com/dlbnco/likes',
+  },
+  {
+    id: 'strava',
+    href: 'https://www.strava.com/athletes/17408874',
+  },
+  {
+    id: 'twitter',
+    href: 'https://twitter.com/dlbnco',
   },
 ];
 
