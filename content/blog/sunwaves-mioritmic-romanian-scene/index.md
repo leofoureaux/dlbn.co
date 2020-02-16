@@ -1,5 +1,5 @@
 ---
-title: Sunwaves & Mioritmic Festival and the Romanian electronic music scene
+title: Rominimal is not dead
 date: 2019-11-08
 image: './images/03.jpg'
 ---
