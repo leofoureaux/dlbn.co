@@ -10,4 +10,7 @@ projects:
   - title: ekādaśi
     url: 'https://ekadasi.dlbn.co'
     description: 'Minimalistic Ekadashi calendar and moon visualizer'
+  - title: la rotta
+    url: 'https://larotta.dlbn.co'
+    description: 'Route visualizer for Strava activities'
 ---
