@@ -29,7 +29,13 @@ const Projects = () => {
   const { title, projects } = data.markdownRemark.frontmatter;
   return (
     <>
-      <Text as="h2" fontSize={3} variant="secondary" mb={4}>
+      <Text
+        as="h2"
+        fontSize={3}
+        variant="secondary"
+        mb={4}
+        css={{ textTransform: 'uppercase', letterSpacing: 4 }}
+      >
         {title}
       </Text>
       <Flex as="ul" flexDirection="column" m={-3}>
@@ -37,7 +43,7 @@ const Projects = () => {
           <Box as="li" p={3} key={project.title}>
             <a href={project.url}>
               <Title mb={2} fontSize={4}>
-                {project.title} →
+                {project.title} ↗
               </Title>
             </a>
             <p>{project.description}</p>

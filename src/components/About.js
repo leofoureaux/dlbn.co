@@ -7,10 +7,9 @@ const Html = styled.div.attrs(() => ({
   mb: 3,
 }))`
   ${fontSize}
-  max-width: 480px;
-  line-height: 1.5;
+  line-height: 1.6;
   h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   h2 {

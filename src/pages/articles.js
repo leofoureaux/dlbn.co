@@ -1,10 +1,10 @@
 import React from 'react';
+import Articles from '../components/Articles';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
 import Text from '../components/Text';
-import Art from '../components/Art';
 
-const ArtPage = () => {
+const ArticlesPage = () => {
   return (
     <Layout>
       <Text fontSize={1} mb={4}>
@@ -12,9 +12,9 @@ const ArtPage = () => {
           ← back
         </Link>
       </Text>
-      <Art />
+      <Articles />
     </Layout>
   );
 };
 
-export default ArtPage;
+export default ArticlesPage;
