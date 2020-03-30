@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { space } from 'styled-system';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import Header from './header';
 import Meta from './Meta';
@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Fira Sans', sans-serif;
     color: #fafafa;
+    /* font-size:12px; */
   }
   a, a:link {
     text-decoration: none;
@@ -47,10 +48,19 @@ const Container = styled.div.attrs(() => ({
   py: [4, 5],
 }))`
   ${space}
+  max-width: 768px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 `;
+
+const breakpoints = {
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1440px',
+};
 
 const Layout = ({ children, discreet }) => (
   <StaticQuery
@@ -64,17 +74,22 @@ const Layout = ({ children, discreet }) => (
       }
     `}
     render={data => (
-      <>
-        <Meta />
-        <GlobalStyle />
-        <Body>
-          <ArtHeader discreet={discreet} />
-          <Container>
-            <Header mb={[4, 5]} siteTitle={data.site.siteMetadata.title} />
-            <main>{children}</main>
-          </Container>
-        </Body>
-      </>
+      <ThemeProvider
+        theme={{
+          breakpoints: Object.values(breakpoints),
+        }}
+      >
+        <>
+          <Meta />
+          <GlobalStyle />
+          <Body>
+            <Container>
+              {/* <Header mb={[4, 5]} siteTitle={data.site.siteMetadata.title} /> */}
+              <main>{children}</main>
+            </Container>
+          </Body>
+        </>
+      </ThemeProvider>
     )}
   />
 );
