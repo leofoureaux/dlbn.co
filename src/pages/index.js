@@ -3,15 +3,12 @@ import styled from 'styled-components';
 import { space } from 'styled-system';
 
 import Layout from '../components/layout';
-import Avatar from '../components/Avatar';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Separator from '../components/Separator';
 import Projects from '../components/Projects';
 import Articles from '../components/Articles';
 import Meta from '../components/Meta';
-import { Link } from 'gatsby';
-import Text from '../components/Text';
 import Art from '../components/Art';
 
 const Section = styled.section`
