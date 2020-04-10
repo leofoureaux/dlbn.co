@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fontSize, space } from 'styled-system';
+import { fontSize } from 'styled-system';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Html = styled.div.attrs(() => ({
@@ -13,6 +13,7 @@ const Html = styled.div.attrs(() => ({
     margin-bottom: 1rem;
   }
   h2 {
+    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
   p {
