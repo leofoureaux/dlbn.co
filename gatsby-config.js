@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `dlbn.co`,
-    description: `developer, rider, raver and yogi`,
+    description: `software developer, music lover, amateur cyclist, and yogi`,
     author: `Mateus Dal Bianco Ferreira`,
   },
   plugins: [
