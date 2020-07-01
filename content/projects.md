@@ -1,9 +1,12 @@
 ---
 title: personal projects
 projects:
+  - title: Wowtes
+    url: 'https://wowt.es'
+    description: 'Customise your Strava runs, rides, and hikes to create beautiful charts.'
   - title: tripby.org
     url: 'https://tripby.org'
-    description: 'Psychoactive drug info'
+    description: 'Understand your substances, their effects, dosage and duration'
   - title: react-moon
     url: 'https://dlbnco.github.io/react-moon'
     description: 'React component for rendering moon phases'
