@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Layout from '../components/layout';
 import Meta from '../components/Meta';
 import { format } from 'date-fns';
@@ -10,62 +10,77 @@ import draculaPrismCss from './dracula-prism.css';
 
 const Container = styled.div`
   ${githubcss}
-  max-width: 720px;
-  margin: 0 auto;
-  line-height: 1.5;
-  ul {
-    list-style: disc;
-  }
-  .markdown-body {
-    blockquote {
-      color: inherit;
-    }
-    a,
-    a:link {
-      text-decoration: none;
-      color: #44bce3;
-      &:hover {
-        color: #3cf0b9;
+  ${({ theme }) => css`
+    margin: 0 auto;
+    line-height: 1.5;
+    @media (min-width: ${theme.breakpoints[2]}) {
+      &,
+      .markdown-body {
+        font-size: 20px !important;
+        line-height: 1.6;
+      }
+      p {
+        margin-bottom: 40px !important;
       }
     }
-    color: inherit;
-    line-height: 1.5;
-    font-family: inherit;
-    pre {
-      background: #212121;
+    p {
+      font-size: 1em !important;
     }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    border: 0 !important;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1.5rem;
-  }
-  h5 {
-    font-size: 1.25rem;
-  }
-  h6 {
-    font-size: 1rem;
-  }
-  iframe {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  ${draculaPrismCss}
+    ul {
+      list-style: disc;
+    }
+    .markdown-body {
+      blockquote {
+        color: inherit;
+      }
+      a,
+      a:link {
+        text-decoration: none;
+        color: #44bce3;
+        &:hover {
+          color: #3cf0b9;
+        }
+      }
+      color: inherit;
+      line-height: 1.5;
+      font-family: inherit;
+      pre {
+        background: #212121;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      border: 0 !important;
+      font-weight: 700 !important;
+    }
+    h1 {
+      font-size: 2.25em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.75em;
+    }
+    h4 {
+      font-size: 1.5em;
+    }
+    h5 {
+      font-size: 1.25em;
+    }
+    h6 {
+      font-size: 1em;
+    }
+    iframe {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    ${draculaPrismCss}
+  `}
 `;
 
 const article = ({ pageContext: { article } }) => {
@@ -76,7 +91,7 @@ const article = ({ pageContext: { article } }) => {
   }
   const datetime = new Date(date);
   return (
-    <Layout discreet>
+    <Layout maxWidth={1024}>
       <Meta title={title} description={article.excerpt} image={ogUrl} />
       <Container>
         <Text fontSize={1} mb={4}>
@@ -87,7 +102,12 @@ const article = ({ pageContext: { article } }) => {
         <h1>
           <strong>{article.frontmatter.title}</strong>
         </h1>
-        <Text as="p" fontSize={0} variant="secondary" mb={3}>
+        <Text
+          fontSize={[0, null, 2]}
+          fontFamily="Fira Mono"
+          variant="secondary"
+          mb={[3, null, 5]}
+        >
           {format(datetime, 'MMMM dd, yyyy')}
         </Text>
         <div

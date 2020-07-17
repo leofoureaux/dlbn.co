@@ -61,8 +61,15 @@ const Articles = ({ limit }) => {
           <Box key={id} mb={[3, 4]}>
             <Link to={`/articles/${slug}`} style={{ display: 'block' }}>
               <Card width={1} p={[3, 4]}>
-                <Text fontSize={3}>{title}</Text>
-                <Text py={3} color="#fafafa">
+                <Text fontWeight="700" fontSize={3}>
+                  {title}
+                </Text>
+                <Text
+                  py={3}
+                  fontFamily="Fira Mono"
+                  lineHeight="1.5"
+                  color="#fafafa"
+                >
                   {excerpt}
                 </Text>
                 <Text as="p" color="#fafafa">

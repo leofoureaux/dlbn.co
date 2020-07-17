@@ -9,6 +9,8 @@ const Title = styled.h2`
   ${fontSize}
   ${space}
   display: inline-flex;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
 `;
 
 const Projects = () => {
