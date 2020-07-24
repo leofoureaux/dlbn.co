@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   p,ul,ol,li {
+    line-height: 1.6;
     font-family: 'Fira Mono', monospace;
   }
 `;
