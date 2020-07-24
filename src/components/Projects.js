@@ -48,7 +48,7 @@ const Projects = () => {
                 {project.title} ↗
               </Title>
             </a>
-            <p>{project.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: project.description }} />
           </Box>
         ))}
       </Flex>
