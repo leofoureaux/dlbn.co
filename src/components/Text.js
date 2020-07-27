@@ -1,6 +1,6 @@
 import { Text as RebassText } from 'rebass';
 import styled from 'styled-components';
-import { variant, space, color } from 'styled-system';
+import { variant, space, color, fontSize, fontWeight } from 'styled-system';
 
 const Text = styled(RebassText)`
   ${variant({
@@ -11,6 +11,8 @@ const Text = styled(RebassText)`
   })}
   ${space}
   ${color}
+  ${fontSize}
+  ${fontWeight}
 `;
 
 export default Text;
