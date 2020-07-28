@@ -8,7 +8,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Contact from '../components/Contact';
 import Text from '../components/Text';
 
-const CV = () => {
+const Resume = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(fileAbsolutePath: { regex: "//cv/headline/" }) {
@@ -34,4 +34,4 @@ const CV = () => {
   );
 };
 
-export default CV;
+export default Resume;
