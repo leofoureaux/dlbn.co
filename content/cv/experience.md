@@ -42,5 +42,8 @@ experiences:
     start: 2012-05-01
     end: 2014-10-30
     description: >-
-      Had my first solid contact with web development.\n\nI created web layouts in Photoshop, then built  them with   HTML/CSS. My layouts were then used by a full-stack developer for further development.
+      Had my first solid contact with web development.
+
+
+      I created web layouts in Photoshop, then built  them with HTML/CSS. My layouts were then used by a full-stack developer for further development.
 ---
