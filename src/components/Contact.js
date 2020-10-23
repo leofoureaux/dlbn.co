@@ -23,10 +23,6 @@ const links = [
     id: 'strava',
     href: 'https://www.strava.com/athletes/17408874',
   },
-  {
-    id: 'twitter',
-    href: 'https://twitter.com/dlbnco',
-  },
 ];
 
 const Icon = styled.img`
