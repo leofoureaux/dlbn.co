@@ -1,12 +1,21 @@
 ---
 title: Experience
 experiences:
+  - company: Nash
+    title: Frontend Developer
+    start: 2020-08-15
+    end:
+    description: >-
+      Solving complex problems to build and maintain a non-custodial cryptocurrency wallet and exchange.
   - company: Quartzo Studio
     title: Software Engineer
     start: 2019-08-01
     end:
     description: >-
-      Migrated a web platform from a legacy WordPress stack to a JAMstack approach using Gatsby, Prismic CMS, and   Netlify serverless functions.
+      Having fun creating partnerships, exploring ideas and building venture projects like a sports activity visualizer.
+      
+      
+      Joined a client project which included rebuilding a web platform from a legacy WordPress stack to a JAMstack approach using Gatsby, Prismic CMS, and Netlify serverless functions.
   - company: Startaê
     title: Frontend Developer
     start: 2018-03-01
