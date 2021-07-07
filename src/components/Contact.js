@@ -11,10 +11,10 @@ const links = [
     id: 'stackoverflow',
     href: 'https://stackoverflow.com/users/4432910/mateus-ferreira',
   },
-  {
-    id: 'linkedin',
-    href: 'https://linkedin.com/in/dlbnco',
-  },
+//  {
+//    id: 'linkedin',
+//    href: 'https://linkedin.com/in/dlbnco',
+//  },
   {
     id: 'soundcloud',
     href: 'https://soundcloud.com/dlbnco/likes',
