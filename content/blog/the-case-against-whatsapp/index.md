@@ -1,0 +1,20 @@
+---
+title: The case against WhatsApp
+date: 2021-07-29
+---
+
+About a year ago, my friend [Leo](https://leofoureaux.com) made a harsh decision. The day after, I followed him and did the same. We decided to quit WhatsApp while living in a country where it is installed in 99% of smartphones and is the go-to tool for communication.
+
+WhatsApp is actually a great app: simple, fast, reliable. I just couldn't stand the hyper-connectedness aspect of it. Anyone could reach me through my phone number, including sales representatives from services I signed up and had to give in my number, which then messaged me trying to push sales. Or that old schoolmate who suddenly decided to create a website for his company and thought a messaging app would be a good place to approach you at nighttime to talk about work. Or that person you recently met that thought it was okay to invite you to some chat group.
+
+Recently, when looking at my internet bank app — known for providing excellent user experience and for revolutionizing banking in Brazil — I noticed a huge, not dismissible card that takes half of my screen trying to push me into an integration with WhatsApp. No, thanks. I don't want to rely on a single app to do everything, and that's one of the reasons I quit it: people have been trying to build the world around it.
+
+Hell, chat is not even good for having proper conversations, let alone do things like appointing a haircut or send money. My barber maintains a website where you can schedule a haircut, and I love him for that. You don't need a phone number, or to run a specific OS, or give your information to some company, in order to use it. Everyone in the world with any kind of device could appoint a haircut. The beauty of the internet is being an open, free platform. It's okay to have fenced services like Instagram — where you can't even navigate without an account — but please, don't try to do everything out of it.
+
+Imagine having to use WhatsApp to work. This is actually a terrible phenomenon that arose in the past years: institutions forcing employees to communicate via WhatsApp. This is downright abuse of people's sanity, and I feel sorry for them. This may not be so bad if you use a dedicated mobile phone for work, but few people do. I've recently met a nurse who, after a full workday, has to spend the night answering her boss' questions on WhatsApp. I think most victims don't even realize the damage, and still sometimes may even find it cool that they're using a high-tech device to work through the internet.
+
+Quitting was also a way of pruning irrelevant connections and opening the way for new ones — the same went for all social media. I've been phone calling people more often and favoring more real experiences. So, instead of trying to reach my neighbor (who is on Telegram) and inviting him to have a beer in the local bar, I just go to the bar, most times to meet him there spontaneously. When I need delivery from some business that uses WhatsApp instead of a proper delivery app, I just call them, it just works and I still get to listen to the other human being's voice on the other side of the line.
+
+I don't look back. We've since moved to Telegram, which is still a chat app but the attitude around it is different, and the app has features to preserve your mental well-being. It's unusual for people to suddenly approach you there. You can archive chats that you don't want to keep looking at or create separate chat groups. So, if you're forced to join a group for study or work reasons, you can at least put those conversations on a different shelf than, let's say, family contacts.
+
+Sometimes when I mention that I'm not on WhatsApp, people have reacted saying that they wished they could do the same. The thing is: **you will find ways to communicate with people that matter to you**, no matter what. We've been doing it for ages before mobile messaging came in. The only reason WhatsApp became so big is that people just conform, and the only way to stop it is to resist.
